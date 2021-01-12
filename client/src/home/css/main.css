@@ -105,3 +105,9 @@
 	width : 100%;
 	left : 0px
 }
+
+.my-modal {
+	background : red;
+    width: 90vw;    /* Occupy the 90% of the screen width */
+    max-width: 90vw;
+}

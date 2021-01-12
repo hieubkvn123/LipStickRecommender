@@ -21,7 +21,8 @@ class HomePage extends Component {
 			'G' : 0,
 			'B' : 0,
 			'color_hex' : '#000000',
-			'lip_type' : 'matte'
+			'lip_type' : 'matte',
+			'lipstick_images' : []
 		}
 	
 		// binding event handlers
@@ -78,6 +79,20 @@ class HomePage extends Component {
 				this.setState({B : data['lip_color']['B']})
 				this.setState({'color_hex' : data['lip_color']['HEX']})
 				this.setState({'lip_type' : data['lip_type']})
+
+				var images = []
+				data['recommendation'].forEach((value, index) => {
+					var item = {
+						original : value['url'],
+						thumbnail : value['url']
+					}
+
+					console.log(value)
+
+					images.push(item)
+				})
+
+				this.setState({lipstick_images : images})
 			}
 		}).catch(error => {
 			console.log(error)
@@ -96,20 +111,18 @@ class HomePage extends Component {
 
 				{/* The Gallery dialog */}
 				<Modal show={this.state.display_gallery} onHide={this.handleGalleryClose} backdrop="static" keyboard={true}>
-	        <Modal.Header closeButton>
-	          <Modal.Title>Modal title</Modal.Title>
-	        </Modal.Header>
-	        <Modal.Body>
-	          I will not close if you click outside me. Don't even try to press
-	          escape key.
-	        </Modal.Body>
-	        <Modal.Footer>
-	          <Button variant="secondary" onClick={this.handleGalleryClose}>
-	            Close
-	          </Button>
-	          <Button variant="primary">Understood</Button>
-	        </Modal.Footer>
-	      </Modal>
+			        <Modal.Header closeButton>
+			        	<Modal.Title>Brand Recommendation</Modal.Title>
+			        </Modal.Header>
+			        <Modal.Body>
+			          <ImageGallery items={this.state.lipstick_images} />
+			        </Modal.Body>
+			        <Modal.Footer>
+			          	<Button variant="secondary" onClick={this.handleGalleryClose}>
+			            Close
+			          	</Button>
+			        </Modal.Footer>
+			    </Modal>
 
 				<div id="utils">	
 					<h2>Upload your selfie</h2>
