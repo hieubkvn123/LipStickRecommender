@@ -1,0 +1,16 @@
+** TODO **
+ PROJECT : Lipstick color recommendation
+ - Lipstick color data collection # Done - from kaggle
+	+ Need to init such that lip colors data are remembered
+
+ - Lip detector # Done
+ - Lip segmentation # Done 
+ - Color comparator using euclidean distance # Done
+ - Suggestion list (brand, color name,...) # Done
+	+ hough line transformation to get colors from color chart
+	+ comparing each color on the color chart and draw bounding boxes
+ - Putting things together # Working on it
+
+ - Recognize whether the person is using matte or glossy lipstick
+
+** Project deadline : 14/01 **

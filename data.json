@@ -1,0 +1,666 @@
+[
+    {
+        "B": 85,
+        "G": 95,
+        "R": 214,
+        "url": "https://www.temptalia.com/wp-content/uploads/2012/02/bobbibrown_miamicoral001.jpg",
+        "brand": "Bobbi Brown",
+        "name": "Rich Lip Color"
+    },
+    {
+        "B": 80,
+        "G": 71,
+        "R": 163,
+        "url": "https://www.temptalia.com/wp-content/uploads/2012/06/bobbibrown_orchidpink001.jpg",
+        "brand": "Bobbi Brown",
+        "name": "Treatment Lip Shine"
+    },
+    {
+        "B": 67,
+        "G": 66,
+        "R": 147,
+        "url": "https://www.temptalia.com/wp-content/uploads/2011/12/benefit_ithinkiloveyou001.jpg",
+        "brand": "Benefit",
+        "name": "Full-Finish Lipstick"
+    },
+    {
+        "B": 63,
+        "G": 86,
+        "R": 207,
+        "url": "https://www.temptalia.com/wp-content/uploads/2012/03/burberry_devonsunset001.jpg",
+        "brand": "Burberry",
+        "name": "Lip Cover"
+    },
+    {
+        "B": 85,
+        "G": 78,
+        "R": 208,
+        "url": "https://www.temptalia.com/wp-content/uploads/2012/05/lemetierdebeaute_fiji001.jpg",
+        "brand": "Le Metier de Beaute",
+        "name": "Colour Core Moisture Stain Lipstick"
+    },
+    {
+        "B": 81,
+        "G": 89,
+        "R": 166,
+        "url": "https://www.temptalia.com/wp-content/uploads/2012/08/dior_incognito001.jpg",
+        "brand": "Dior",
+        "name": "Addict Extreme Lip Color"
+    },
+    {
+        "B": 28,
+        "G": 44,
+        "R": 80,
+        "url": "https://www.temptalia.com/wp-content/uploads/2012/10/dior_diorificlipstick001.jpg",
+        "brand": "Dior",
+        "name": "Diorific Lipstick"
+    },
+    {
+        "B": 41,
+        "G": 63,
+        "R": 222,
+        "url": "https://www.temptalia.com/wp-content/uploads/2011/12/dior_345serum001.jpg",
+        "brand": "Dior",
+        "name": "Serum de Rouge Luminous Color Lip Treamtent SPF 20"
+    },
+    {
+        "B": 70,
+        "G": 82,
+        "R": 162,
+        "url": "https://www.temptalia.com/wp-content/uploads/2012/09/giorgioarmani_111rougedarmani005.jpg",
+        "brand": "Giorgio Armani",
+        "name": "Rouge d'Armani Lipstick"
+    },
+    {
+        "B": 96,
+        "G": 126,
+        "R": 193,
+        "url": "https://www.temptalia.com/wp-content/uploads/2012/11/giorgioarmani_1whitenight012.jpg",
+        "brand": "Giorgio Armani",
+        "name": "Lipstick"
+    },
+    {
+        "B": 39,
+        "G": 33,
+        "R": 103,
+        "url": "https://www.temptalia.com/wp-content/uploads/2010/12/guerlain_brunsatin001.jpg",
+        "brand": "Guerlain",
+        "name": "Kiss Kiss Strass Lip Color"
+    },
+    {
+        "B": 100,
+        "G": 94,
+        "R": 218,
+        "url": "https://www.temptalia.com/wp-content/uploads/2010/10/guerlain_beatrix001.jpg",
+        "brand": "Guerlain",
+        "name": "Rouge G Le Brilliant"
+    },
+    {
+        "B": 42,
+        "G": 59,
+        "R": 97,
+        "url": "https://www.temptalia.com/wp-content/uploads/2012/10/guerlain_700rougeautomatique001.jpg",
+        "brand": "Guerlain",
+        "name": "Shine Automatique Lip Color"
+    },
+    {
+        "B": 50,
+        "G": 37,
+        "R": 185,
+        "url": "https://www.temptalia.com/wp-content/uploads/2012/11/guerlain_calligraphy013.jpg",
+        "brand": "Guerlain",
+        "name": "Lipstick"
+    },
+    {
+        "B": 56,
+        "G": 49,
+        "R": 118,
+        "url": "https://www.temptalia.com/wp-content/uploads/2011/12/mac_approachingstorm001.jpg",
+        "brand": "MAC",
+        "name": "Pro Longwear Lipcreme"
+    },
+    {
+        "B": 39,
+        "G": 39,
+        "R": 133,
+        "url": "https://www.temptalia.com/wp-content/uploads/2017/03/nyx_alabama_001_product.jpg",
+        "brand": "NYX",
+        "name": "Matte Lipstick"
+    },
+    {
+        "B": 75,
+        "G": 106,
+        "R": 247,
+        "url": "https://www.temptalia.com/wp-content/uploads/2013/05/shuuemura_dreamorange001.jpg",
+        "brand": "shu uemura",
+        "name": "Rouge Unlimited Supreme Shine"
+    },
+    {
+        "B": 61,
+        "G": 50,
+        "R": 249,
+        "url": "https://www.temptalia.com/wp-content/uploads/2011/11/thebalm_balmbinivoltwo016.jpg",
+        "brand": "theBalm",
+        "name": "Lip/Cheek Color"
+    },
+    {
+        "B": 78,
+        "G": 91,
+        "R": 194,
+        "url": "https://www.temptalia.com/wp-content/uploads/2013/06/flowerbeauty_petalkiss001.jpg",
+        "brand": "Flower Beauty",
+        "name": "Kiss Stick Velvet Lip Color"
+    },
+    {
+        "B": 79,
+        "G": 90,
+        "R": 235,
+        "url": "https://www.temptalia.com/wp-content/uploads/2013/07/urbandecay_5150swatch001.jpg",
+        "brand": "Urban Decay",
+        "name": "Lipstick"
+    },
+    {
+        "B": 36,
+        "G": 34,
+        "R": 92,
+        "url": "https://www.temptalia.com/wp-content/uploads/2013/08/lauramercier_merlot001.jpg",
+        "brand": "Laura Mercier",
+        "name": "Cr\u00c3\u00a8me Smooth Lip Color"
+    },
+    {
+        "B": 76,
+        "G": 74,
+        "R": 177,
+        "url": "https://www.temptalia.com/wp-content/uploads/2013/10/ardencyinn_twist006.jpg",
+        "brand": "Ardency Inn",
+        "name": "Modster Long Play Supercharged Lip Color"
+    },
+    {
+        "B": 83,
+        "G": 61,
+        "R": 135,
+        "url": "https://www.temptalia.com/wp-content/uploads/2013/10/nars_fullfrontal001.jpg",
+        "brand": "NARS",
+        "name": "Cinematic Lipstick"
+    },
+    {
+        "B": 32,
+        "G": 30,
+        "R": 131,
+        "url": "https://www.temptalia.com/wp-content/uploads/2013/11/annasui_rocksongminniekit019.jpg",
+        "brand": "Anna Sui",
+        "name": "Lipstick"
+    },
+    {
+        "B": 57,
+        "G": 89,
+        "R": 244,
+        "url": "https://www.temptalia.com/wp-content/uploads/2013/12/paulandjoe_081lipstick001.jpg",
+        "brand": "Paul and Joe Beaute",
+        "name": "Lipstick CS Refill"
+    },
+    {
+        "B": 91,
+        "G": 102,
+        "R": 203,
+        "url": "https://www.temptalia.com/wp-content/uploads/2014/02/ysl_15corailintuitive005.jpg",
+        "brand": "YSL",
+        "name": "Rouge Volupte Shine"
+    },
+    {
+        "B": 38,
+        "G": 32,
+        "R": 109,
+        "url": "https://www.temptalia.com/wp-content/uploads/2017/10/clinique_black-honey_001_product.jpg",
+        "brand": "Clinique",
+        "name": "Almost Lipstick"
+    },
+    {
+        "B": 77,
+        "G": 61,
+        "R": 193,
+        "url": "https://www.temptalia.com/wp-content/uploads/2014/01/bobbibrown_pinkflush001.jpg",
+        "brand": "Bobbi Brown",
+        "name": "Sheer Lipcolor"
+    },
+    {
+        "B": 76,
+        "G": 40,
+        "R": 184,
+        "url": "https://www.temptalia.com/wp-content/uploads/2014/03/illamasqua_glissade001.jpg",
+        "brand": "Illamasqua",
+        "name": "Glamore Lipstick"
+    },
+    {
+        "B": 64,
+        "G": 51,
+        "R": 116,
+        "url": "https://www.temptalia.com/wp-content/uploads/2014/03/sephora_radiantrushlipstick001.jpg",
+        "brand": "Sephora + Pantone Universe",
+        "name": "Matte Lipstick"
+    },
+    {
+        "B": 58,
+        "G": 95,
+        "R": 171,
+        "url": "https://www.temptalia.com/wp-content/uploads/2014/04/tomford_moonlight001.jpg",
+        "brand": "Tom Ford Beauty",
+        "name": "Lip Shimmer"
+    },
+    {
+        "B": 92,
+        "G": 101,
+        "R": 229,
+        "url": "https://www.temptalia.com/wp-content/uploads/2014/05/bitebeauty_centifolia004.jpg",
+        "brand": "Bite Beauty",
+        "name": "Deconstructed Rose Lipstick"
+    },
+    {
+        "B": 47,
+        "G": 33,
+        "R": 104,
+        "url": "https://www.temptalia.com/wp-content/uploads/2014/09/gucci_bittergrape001.jpg",
+        "brand": "Gucci Beauty",
+        "name": "Audacious Color Intense Lipstick"
+    },
+    {
+        "B": 84,
+        "G": 72,
+        "R": 231,
+        "url": "https://www.temptalia.com/wp-content/uploads/2014/09/gucci_hibiscusthrill001.jpg",
+        "brand": "Gucci Beauty",
+        "name": "Luxurious Moisture Rich Lipstick"
+    },
+    {
+        "B": 85,
+        "G": 112,
+        "R": 174,
+        "url": "https://www.temptalia.com/wp-content/uploads/2014/10/nars_adriatic001.jpg",
+        "brand": "NARS",
+        "name": "Hardwired Lipstick"
+    },
+    {
+        "B": 96,
+        "G": 53,
+        "R": 238,
+        "url": "https://www.temptalia.com/wp-content/uploads/2014/11/lipstickqueen_haveparis001.jpg",
+        "brand": "Lipstick Queen",
+        "name": "Silver Screen Lipstick"
+    },
+    {
+        "B": 65,
+        "G": 71,
+        "R": 190,
+        "url": "https://www.temptalia.com/wp-content/uploads/2014/12/sephora_puremarsala004.jpg",
+        "brand": "Sephora + Pantone Universe",
+        "name": "Matte Lip Cr\u00c3\u00a8me"
+    },
+    {
+        "B": 96,
+        "G": 89,
+        "R": 206,
+        "url": "https://www.temptalia.com/wp-content/uploads/2014/12/lorac_unzippedcheek021.jpg",
+        "brand": "LORAC",
+        "name": "Alter Ego Lipstick"
+    },
+    {
+        "B": 86,
+        "G": 75,
+        "R": 207,
+        "url": "https://www.temptalia.com/wp-content/uploads/2015/03/troysurratt_perfectionniste001.jpg",
+        "brand": "Surratt Beauty",
+        "name": "Lipslique"
+    },
+    {
+        "B": 72,
+        "G": 74,
+        "R": 185,
+        "url": "https://www.temptalia.com/wp-content/uploads/2015/04/marcjacobs_150eatcake001.jpg",
+        "brand": "Marc Jacobs Beauty",
+        "name": "Sheer Lip Gel"
+    },
+    {
+        "B": 65,
+        "G": 56,
+        "R": 213,
+        "url": "https://www.temptalia.com/wp-content/uploads/2015/05/esteelauder_blossombright001.jpg",
+        "brand": "Estee Lauder",
+        "name": "Pure Color Envy Shine Sculpting Lipstick"
+    },
+    {
+        "B": 87,
+        "G": 95,
+        "R": 221,
+        "url": "https://www.temptalia.com/wp-content/uploads/2015/06/clinique_05melonpop001.jpg",
+        "brand": "Clinique",
+        "name": "Pop Lip Colour + Primer Lipstick"
+    },
+    {
+        "B": 35,
+        "G": 36,
+        "R": 135,
+        "url": "https://www.temptalia.com/wp-content/uploads/2015/06/besame_americanbeauty001.jpg",
+        "brand": "Besame",
+        "name": "Classic Color Lipstick"
+    },
+    {
+        "B": 74,
+        "G": 89,
+        "R": 189,
+        "url": "https://www.temptalia.com/wp-content/uploads/2015/06/givenchy_103beigeplumetisporter001.jpg",
+        "brand": "Givenchy",
+        "name": "Le Rouge-a-Porter"
+    },
+    {
+        "B": 47,
+        "G": 54,
+        "R": 98,
+        "url": "https://www.temptalia.com/wp-content/uploads/2015/07/bitebeauty_opalcremelipstick001.jpg",
+        "brand": "Bite Beauty",
+        "name": "Cr\u00c3\u00a8me Lipstick"
+    },
+    {
+        "B": 40,
+        "G": 41,
+        "R": 80,
+        "url": "https://www.temptalia.com/wp-content/uploads/2015/09/christianlouboutin_etonmoi001.jpg",
+        "brand": "Christian Louboutin Beaute",
+        "name": "Velvet Matte Lip Colour"
+    },
+    {
+        "B": 76,
+        "G": 43,
+        "R": 211,
+        "url": "https://www.temptalia.com/wp-content/uploads/2015/09/christianlouboutin_loubiminette001.jpg",
+        "brand": "Christian Louboutin Beaute",
+        "name": "Sheer Voile Lip Colour"
+    },
+    {
+        "B": 75,
+        "G": 71,
+        "R": 224,
+        "url": "https://www.temptalia.com/wp-content/uploads/2015/09/christianlouboutin_missloubi002.jpg",
+        "brand": "Christian Louboutin Beaute",
+        "name": "Silky Satin Lip Colour"
+    },
+    {
+        "B": 74,
+        "G": 57,
+        "R": 163,
+        "url": "https://www.temptalia.com/wp-content/uploads/2015/09/lipstickqueen_frogprince001.jpg",
+        "brand": "Lipstick Queen",
+        "name": "Lipstick"
+    },
+    {
+        "B": 48,
+        "G": 53,
+        "R": 172,
+        "url": "https://www.temptalia.com/wp-content/uploads/2015/09/mac_bravered002.jpg",
+        "brand": "MAC",
+        "name": "Guo Pei Lipstick"
+    },
+    {
+        "B": 88,
+        "G": 73,
+        "R": 222,
+        "url": "https://www.temptalia.com/wp-content/uploads/2015/09/dior_578diorkiss001.jpg",
+        "brand": "Dior",
+        "name": "Dior Addict Lipstick (2015)"
+    },
+    {
+        "B": 57,
+        "G": 79,
+        "R": 163,
+        "url": "https://www.temptalia.com/wp-content/uploads/2015/10/nars_besamemucho001.jpg",
+        "brand": "NARS",
+        "name": "Killer Shine Lipstick"
+    },
+    {
+        "B": 82,
+        "G": 95,
+        "R": 224,
+        "url": "https://www.temptalia.com/wp-content/uploads/2015/11/buxom_coralconfession001.jpg",
+        "brand": "Buxom",
+        "name": "Bold Gel Lipstick"
+    },
+    {
+        "B": 90,
+        "G": 101,
+        "R": 209,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/01/urbandecay_exgirlfriendlipstick001.jpg",
+        "brand": "Urban Decay",
+        "name": "Gwen Stefani Lipstick"
+    },
+    {
+        "B": 76,
+        "G": 86,
+        "R": 167,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/02/lauramercier_amarettoswirl001.jpg",
+        "brand": "Laura Mercier",
+        "name": "Lip Parfait Creamy Colourbalm"
+    },
+    {
+        "B": 82,
+        "G": 87,
+        "R": 179,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/02/tarte_beachbum001.jpg",
+        "brand": "Tarte",
+        "name": "Drench Lip Splash Lipstick"
+    },
+    {
+        "B": 80,
+        "G": 88,
+        "R": 193,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/02/tarte_nudeliprescue001.jpg",
+        "brand": "Tarte",
+        "name": "Quench Lip Rescue"
+    },
+    {
+        "B": 102,
+        "G": 89,
+        "R": 244,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/03/toofaced_asif001.jpg",
+        "brand": "Too Faced",
+        "name": "La Matte Color Drenched Matte Lipstick"
+    },
+    {
+        "B": 30,
+        "G": 33,
+        "R": 155,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/03/mac_leadingladyred001.jpg",
+        "brand": "MAC",
+        "name": "Charlotte Olympia Lipstick"
+    },
+    {
+        "B": 0,
+        "G": 0,
+        "R": 0,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/03/surratt_cultive001.jpg",
+        "brand": "Surratt Beauty",
+        "name": "Prismatique Lips"
+    },
+    {
+        "B": 65,
+        "G": 85,
+        "R": 176,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/03/tomford_caladivolpe001.jpg",
+        "brand": "Tom Ford Beauty",
+        "name": "Moisturecore Lip Color"
+    },
+    {
+        "B": 75,
+        "G": 53,
+        "R": 214,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/03/tomford_aphrodite001.jpg",
+        "brand": "Tom Ford Beauty",
+        "name": "Ultra-Rich Lip Color"
+    },
+    {
+        "B": 40,
+        "G": 41,
+        "R": 158,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/04/sephora_minnielipstick001.jpg",
+        "brand": "Sephora",
+        "name": "Minnie Beauty Lipstick"
+    },
+    {
+        "B": 94,
+        "G": 132,
+        "R": 223,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/04/urbandecay_alice001.jpg",
+        "brand": "Urban Decay",
+        "name": "Alice Through the Looking Glass Lipstick"
+    },
+    {
+        "B": 61,
+        "G": 38,
+        "R": 114,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/04/colourpop_backupmattex001.jpg",
+        "brand": "Colour Pop",
+        "name": "Matte X Lippie Stix"
+    },
+    {
+        "B": 0,
+        "G": 0,
+        "R": 0,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/05/maybelline_750wickedlywhite001.jpg",
+        "brand": "Maybelline",
+        "name": "Color Sensational The Loaded Bolds Lip Color"
+    },
+    {
+        "B": 81,
+        "G": 71,
+        "R": 220,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/06/guerlain_lapetiterobenoirlipstick001.jpg",
+        "brand": "Guerlain",
+        "name": "La Petite Robe Noire Lip Colour"
+    },
+    {
+        "B": 73,
+        "G": 67,
+        "R": 158,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/06/smashbox_audition001.jpg",
+        "brand": "Smashbox",
+        "name": "Be Legendary Cream Lipstick"
+    },
+    {
+        "B": 82,
+        "G": 73,
+        "R": 180,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/06/smashbox_mauvematte001.jpg",
+        "brand": "Smashbox",
+        "name": "Be Legendary Matte Lipstick"
+    },
+    {
+        "B": 57,
+        "G": 75,
+        "R": 123,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/07/doseofcolors_darksecret001.jpg",
+        "brand": "Dose of Colors",
+        "name": "Lipstick"
+    },
+    {
+        "B": 91,
+        "G": 102,
+        "R": 191,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/09/bareminerals_gennudelipstick_baby001.jpg",
+        "brand": "bareMinerals",
+        "name": "Gen Nude Radiant Lipstick"
+    },
+    {
+        "B": 56,
+        "G": 44,
+        "R": 184,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/07/shiseido_rd306liaison001.jpg",
+        "brand": "Shiseido",
+        "name": "Rouge Rouge Lipstick"
+    },
+    {
+        "B": 70,
+        "G": 63,
+        "R": 186,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/08/suqqu_02akibara001.jpg",
+        "brand": "Suqqu",
+        "name": "Extra Glow Lipstick"
+    },
+    {
+        "B": 74,
+        "G": 78,
+        "R": 180,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/08/dior_169grege1947001.jpg",
+        "brand": "Dior",
+        "name": "Rouge Dior Lip Color"
+    },
+    {
+        "B": 88,
+        "G": 60,
+        "R": 213,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/09/lauramercier_ladiescreme_bebe001.jpg",
+        "brand": "Laura Mercier",
+        "name": "Velour Lovers Lip Colour"
+    },
+    {
+        "B": 57,
+        "G": 71,
+        "R": 152,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/09/esteelauder_braziliannude001.jpg",
+        "brand": "Estee Lauder",
+        "name": "Victoria Beckham Lipstick"
+    },
+    {
+        "B": 56,
+        "G": 62,
+        "R": 146,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/10/tomford_lipduo_01publicdisplay002.jpg",
+        "brand": "Tom Ford Beauty",
+        "name": "Lip Contour Duo Lip Color"
+    },
+    {
+        "B": 43,
+        "G": 45,
+        "R": 153,
+        "url": "https://www.temptalia.com/wp-content/uploads/2016/10/nars_fearlessred001.jpg",
+        "brand": "NARS",
+        "name": "Moon Matte Lipstick"
+    },
+    {
+        "B": 59,
+        "G": 48,
+        "R": 148,
+        "url": "https://www.temptalia.com/wp-content/uploads/2018/05/givenchy_rouge-interdit-vinyl-color-enhancing-lipstick_17-african-copper.jpg",
+        "brand": "Givenchy",
+        "name": "Rouge Interdit Vinyl Color Enhancing Lipstick"
+    },
+    {
+        "B": 23,
+        "G": 15,
+        "R": 145,
+        "url": "https://www.temptalia.com/wp-content/uploads/2017/01/givenchy_12rougeinsomnie001.jpg",
+        "brand": "Givenchy",
+        "name": "Rouge Interdit Satin Lipstick (2017)"
+    },
+    {
+        "B": 91,
+        "G": 112,
+        "R": 191,
+        "url": "https://www.temptalia.com/wp-content/uploads/2017/01/maybelline_530hotsand001.jpg",
+        "brand": "Maybelline",
+        "name": "Color Sensational Inti-Matte Nudes"
+    },
+    {
+        "B": 92,
+        "G": 98,
+        "R": 214,
+        "url": "https://www.temptalia.com/wp-content/uploads/2017/01/anastasia_1_001_product.jpg",
+        "brand": "Anastasia",
+        "name": "Lipstick"
+    },
+    {
+        "B": 93,
+        "G": 104,
+        "R": 186,
+        "url": "https://www.temptalia.com/wp-content/uploads/2017/02/tom-ford-beauty_automatic_003_product.jpg",
+        "brand": "Tom Ford Beauty",
+        "name": "Shade & Illuminate Lip Color"
+    }
+]

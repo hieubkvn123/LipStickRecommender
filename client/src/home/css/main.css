@@ -1,0 +1,107 @@
+#utils {
+	margin-top : 100px;
+	display : inline-block;
+	float : left;
+	margin-left : 20px;
+	padding : 28px;
+	max-width : 40vw;
+	min-width : 40vw;
+	min-height : 80vh;
+	border-radius : 5px;
+	vertical-align : top;
+	background-color : #6272a4;
+	height : 80vh;
+
+}
+
+#utils  h2 {
+	text-align : left;
+	margin-bottom : 20px;
+	font-weight : bolder;
+	text-decoration : underline;
+}
+
+#image-region {
+	margin-top : 100px;
+	display : inline-block;
+	float : left;
+	margin-left : 20px;
+	min-width : 40vw;
+	max-width : 50vw;
+	min-height : 80vh;
+	max-height : 80vh;
+	max-height : 80vh;
+	overflow : scroll;
+
+	/* Hide scrollbar */
+	-ms-overflow-style : none;
+	scrollbar-width : none;
+
+	/* Border */
+	border : 1px solid gray;
+	padding : 28px;
+	border-radius : 5px;
+}
+
+/* Hide scrollbar on IE and Safari */
+#image-region::-webkit-scrollbar {
+	display : none;
+}
+
+#image {
+	width : 100%;
+}
+
+#selfie-upload {
+	display : none;
+}
+
+#upload-button {
+	float : left;
+	display : block;
+}
+
+#loading-screen {
+	float : left;
+	width : 200px;
+	height : 200px;
+}
+
+#loading-screen img {
+	float : left;
+	width : 200px;
+	height : auto;
+}
+
+#lip-color {
+	float : left;
+	width : 140px;
+	height : 140px;
+	display : block;
+}
+
+#color-info-text {
+	float : left;
+	font-size : 20px;
+	margin-left : 12px;
+	display : block;
+}
+
+#color-info-text .header {
+	float : left;
+	font-weight : bold;
+	text-decoration : italic;
+}
+
+#color-info-panel {
+	position : relative;
+	min-height : 60vh;
+	max-height : 60vh;
+}
+
+#recommend-button {
+	position : absolute;
+	bottom : 0px;
+	width : 100%;
+	left : 0px
+}
