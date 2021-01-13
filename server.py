@@ -13,6 +13,13 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
+def hex2rgb(color):
+    if(color.startswith('#')):
+        color = color[1:]
+
+    r, g, b = tuple(int(color[i:i+2], 16) for i in (0, 2, 4))
+    return b, g, r
+
 def rgb2hex(color):
     b, g, r = color
     return "#{:02x}{:02x}{:02x}".format(r,g,b)
