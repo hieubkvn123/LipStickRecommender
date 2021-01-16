@@ -205,6 +205,16 @@ def _get_color_distance(data_file, color, output_file_path='data.json', top_pick
     
     return final
 
+def _pairwise_color_distance(color1, color2):
+    color1 = cv2.cvtColor(np.array([[color1]]).astype('uint8'), cv2.COLOR_BGR2LAB)
+    color2 = cv2.cvtColor(np.array([[color2]]).astype('uint8'), cv2.COLOR_BGR2LAB)
+
+    distance = np.sqrt(((color1 - color2) ** 2).sum())
+
+    return distance
+
+
+
 ''' Sample programme '''
 '''
 image = cv2.imread('data/chi4.jpeg')

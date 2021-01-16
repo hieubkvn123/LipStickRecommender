@@ -4,7 +4,8 @@ import numpy as np
 
 from PIL import Image
 from dl.recognition import _recognize_lip
-from utils import _detect_lip, _estimate_lip_color, _get_color_distance
+from utils import _detect_lip, _estimate_lip_color
+from utils import _pairwise_color_distance, _get_color_distance
 
 from flask import Flask
 from flask import request
@@ -12,6 +13,31 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
+
+### Read the colors chart in advance ###
+color_chart_str = open('mac_matte.json', 'r').read().replace('\n','').replace('\t','')
+color_chart = json.loads(color_chart_str)
+
+def get_best_from_colorchart(lip_color, top_pick=2):
+    distances = {}
+    for color in color_chart:
+        color_ = color['hex']
+        b, g, r = hex2rgb(color_)
+        distance = _pairwise_color_distance([b, g, r], lip_color)
+        distances[color['hex']] = distance 
+
+    ### Sort map by distance ###
+    print(distances)
+    distances = {k: v for k, v in sorted(distances.items(), key=lambda item: item[1])}
+    keys = list(distances.keys())
+
+    ### Final selection ###
+    final = []
+    for i in range(top_pick):
+        print(distances[keys[i]])
+        final.append(keys[i])
+
+    return final
 
 def hex2rgb(color):
     if(color.startswith('#')):
@@ -51,6 +77,7 @@ def upload():
             data = _get_color_distance('products.csv', lip_color)
             # print(json.dumps(data, sort_keys=True, indent=4)) - list of recommendations
 
+        print(get_best_from_colorchart(lip_color))
         response = {
             "lip_color" : {
                 "B" : int(lip_color[0]),
