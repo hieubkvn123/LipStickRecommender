@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { InputGroup, FormControl, Button } from 'react-bootstrap'
-import { Modal } from 'react-bootstrap'
+import { Modal, Container, Row, Col } from 'react-bootstrap'
 import ImageGallery from 'react-image-gallery'
 import axios from 'axios'
 
@@ -22,13 +22,20 @@ class HomePage extends Component {
 			'B' : 0,
 			'color_hex' : '#000000',
 			'lip_type' : 'matte',
-			'lipstick_images' : []
+			'lipstick_images' : [],
+			'brand_info' : [],
+			'current_brand_index' : 0
 		}
 	
 		// binding event handlers
+		this.render = this.render.bind(this)
 		this.fileChange = this.fileChange.bind(this)
 		this.handleGalleryClose = this.handleGalleryClose.bind(this)
 		this.handleGalleryOpen = this.handleGalleryOpen.bind(this)
+
+		// binding event handlers for the image gallery
+		this.thumbnailClicked = this.thumbnailClicked.bind(this)
+		this.slideChanged = this.slideChanged.bind(this)
 	}
 
 	componentDidMount(){
@@ -81,17 +88,25 @@ class HomePage extends Component {
 				this.setState({'lip_type' : data['lip_type']})
 
 				var images = []
+				var brand_info = []
 				data['recommendation'].forEach((value, index) => {
 					var item = {
 						original : value['url'],
-						thumbnail : value['url']
+						thumbnail : value['url'],
 					}
 
-					console.log(value)
+					var brand = {
+						'brand_name' : value['brand'],
+						'product_name' : value['name']
+					}
+
+					// console.log(value)
 
 					images.push(item)
+					brand_info.push(brand)
 				})
 
+				this.setState({brand_info : brand_info})
 				this.setState({lipstick_images : images})
 			}
 		}).catch(error => {
@@ -101,6 +116,15 @@ class HomePage extends Component {
 	}
 
 	triggerInputFile = () => this.fileInput.click()
+
+	/** Callbacks for image gallery **/
+	thumbnailClicked(event, index) {
+		this.setState({current_brand_index : index})
+	}
+
+	slideChanged(index){
+		this.setState({current_brand_index : index})
+	}
 
 	render() {
 		return (
@@ -112,11 +136,42 @@ class HomePage extends Component {
 				{/* The Gallery dialog */}
 				<Modal show={this.state.display_gallery} onHide={this.handleGalleryClose} backdrop="static" keyboard={true}>
 			        <Modal.Header closeButton>
-			        	<Modal.Title>Brand Recommendation</Modal.Title>
+			        	<Modal.Title style={{'font-weight' : 'bolder', 'text-decoration' : 'underline'}}>Brand Recommendation</Modal.Title>
 			        </Modal.Header>
 			        <Modal.Body>
-			          <ImageGallery items={this.state.lipstick_images} />
+			          <Container>
+			          	<Row>
+			          		<Col>
+			          			<ImageGallery items={this.state.lipstick_images} thumbnailPosition={'bottom'} 
+			          				onThumbnailClick={this.thumbnailClicked}
+			          				onSlide={this.slideChanged}/>
+			          		</Col>
+			          		<Col>
+			          			<div id='brand-info'>
+			          				<table style={{'width' : '100%'}}>
+			          					<tr>
+			          						<th>Brand</th>
+			          						<td style={{'float' : 'right'}}>
+			          							{this.state.brand_info.length > 0 
+			          								? <td>{this.state.brand_info[this.state.current_brand_index].brand_name}</td> 
+			          								: <td></td>}
+			          						</td>
+			          					</tr>
+			          					<tr>
+			          						<th>Product Name</th>
+			          						<td style={{'float' : 'right'}}>
+			          							{this.state.brand_info.length > 0 
+			          								? <td>{this.state.brand_info[this.state.current_brand_index].product_name}</td> 
+			          								: <td></td>}
+			          						</td>
+			          					</tr>
+			          				</table>
+			          			</div>
+			          		</Col>
+			          	</Row>
+			          </Container>
 			        </Modal.Body>
+
 			        <Modal.Footer>
 			          	<Button variant="secondary" onClick={this.handleGalleryClose}>
 			            Close
@@ -143,20 +198,20 @@ class HomePage extends Component {
 							<div style={{'display' : 'block', 'width': '100%', 'height':'200px'}}>
 								<div id='lip-color' style={{background:`rgb(${this.state.R}, ${this.state.G}, ${this.state.B})`}}></div>
 								<p id='color-info-text'>
-									<table>
-										<tr>
+									<table style={{'width' : '100%'}}>
+										<tr style={{'width' : '100%'}}>
 											<td>
 												<span className='header'>Lip Color in rgb :</span>
 											</td>
-											<td style={{'float':'right'}}>
-												rgb({this.state.R}, {this.state.G}, {this.state.B})
+											<td style={{'float':'right', 'width' : '100%', 'margin-left' : '10px'}}>
+												({this.state.R}, {this.state.G}, {this.state.B})
 											</td>
 										</tr>
-										<tr>
+										<tr style={{'width' : '100%'}}>
 											<td>
 												<span className='header'>Lip Color in hex :</span>
 											</td>
-											<td style={{'float':'right'}}>
+											<td tyle={{'float':'right', 'width' : '100%', 'margin-left' : '10px'}}>
 												{this.state.color_hex} 
 											</td>
 										</tr>
@@ -165,7 +220,7 @@ class HomePage extends Component {
 											<td>
 												<span className='header'>Lip Type :</span>
 											</td>
-											<td style={{'float':'right'}}>
+											<td tyle={{'float':'right', 'width' : '100%', 'margin-left' : '10px'}}>
 												{this.state.lip_type} 
 											</td>
 										</tr>
