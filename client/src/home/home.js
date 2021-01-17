@@ -24,6 +24,7 @@ class HomePage extends Component {
 			'lip_type' : 'matte',
 			'lipstick_images' : [],
 			'brand_info' : [],
+			'best_colors' : [],
 			'current_brand_index' : 0
 		}
 	
@@ -86,6 +87,7 @@ class HomePage extends Component {
 				this.setState({B : data['lip_color']['B']})
 				this.setState({'color_hex' : data['lip_color']['HEX']})
 				this.setState({'lip_type' : data['lip_type']})
+				this.setState({'best_colors' : data['best_colors']})
 
 				var images = []
 				var brand_info = []
@@ -97,7 +99,8 @@ class HomePage extends Component {
 
 					var brand = {
 						'brand_name' : value['brand'],
-						'product_name' : value['name']
+						'product_name' : value['name'],
+						'url' : value['url']
 					}
 
 					// console.log(value)
@@ -169,6 +172,14 @@ class HomePage extends Component {
 			          								: <p></p>}
 			          						</p>
 			          					</tr>
+			          					<tr>
+			          						<p><span className='header'>URL</span></p>
+			          						<p>
+			          							{this.state.brand_info.length > 0 
+			          								? <a href={this.state.brand_info[this.state.current_brand_index].url}>Click Here</a> 
+			          								: <p></p>}
+			          						</p>
+			          					</tr>
 			          				</table>
 			          			</div>
 			          		</Col>
@@ -196,49 +207,66 @@ class HomePage extends Component {
 					      aria-label="Selfie image"
 					      aria-describedby="basic-addon1"
 					    />
-					  </InputGroup>
-					  <div id='color-info-panel' hidden={!this.state.display_info}>
-							<h2>Lip color</h2>
-							<div style={{'display' : 'block', 'width': '100%', 'height':'200px'}}>
-								<div id='lip-color' style={{background:`rgb(${this.state.R}, ${this.state.G}, ${this.state.B})`}}></div>
-								<p id='color-info-text'>
-									<table style={{'width' : '100%'}}>
-										<tr style={{'width' : '100%'}}>
-											<td>
-												<span className='header'>Lip Color in rgb :</span>
-											</td>
-											<td style={{'float':'right', 'width' : '100%', 'margin-left' : '10px'}}>
-												({this.state.R}, {this.state.G}, {this.state.B})
-											</td>
-										</tr>
-										<tr style={{'width' : '100%'}}>
-											<td>
-												<span className='header'>Lip Color in hex :</span>
-											</td>
-											<td tyle={{'float':'right', 'width' : '100%', 'margin-left' : '10px'}}>
-												{this.state.color_hex} 
-											</td>
-										</tr>
+					</InputGroup>
+				  	<div id='color-info-panel' hidden={!this.state.display_info}>
+						<h2>Lip color</h2>
+						<div style={{'display' : 'block', 'width': '100%', 'height':'200px'}}>
+							<div id='lip-color' style={{background:`rgb(${this.state.R}, ${this.state.G}, ${this.state.B})`}}></div>
+							<p id='color-info-text'>
+								<table style={{'width' : '100%'}}>
+									<tr style={{'width' : '100%'}}>
+										<td>
+											<span className='header'>Lip Color in rgb :</span>
+										</td>
+										<td style={{'float':'right', 'width' : '100%', 'margin-left' : '10px'}}>
+											({this.state.R}, {this.state.G}, {this.state.B})
+										</td>
+									</tr>
+									<tr style={{'width' : '100%'}}>
+										<td>
+											<span className='header'>Lip Color in hex :</span>
+										</td>
+										<td tyle={{'float':'right', 'width' : '100%', 'margin-left' : '10px'}}>
+											{this.state.color_hex} 
+										</td>
+									</tr>
 
-										<tr>
-											<td>
-												<span className='header'>Lip Type :</span>
-											</td>
-											<td tyle={{'float':'right', 'width' : '100%', 'margin-left' : '10px'}}>
-												{this.state.lip_type} 
-											</td>
-										</tr>
-									</table>
-								</p>
-							</div>
+									<tr>
+										<td>
+											<span className='header'>Lip Type :</span>
+										</td>
+										<td tyle={{'float':'right', 'width' : '100%', 'margin-left' : '10px'}}>
+											{this.state.lip_type} 
+										</td>
+									</tr>
+								</table>
+							</p>
+						</div>
 
-							<h2 style={{'display' : 'block'}}>Recommended Color (Dior)</h2>
-							<button id='recommend-button' onClick={this.handleGalleryOpen} className='btn btn-info' type='button'>See recommendation from database</button>
+						<h2 style={{'display' : 'block'}}>Recommended Color (MAC)</h2>
+						<table style={{'display' : 'block', 'width' : '100%'}} id='recommended-color-table'>
+							{this.state.best_colors.map((value, index) => {
+								console.log('ahihi')
+								console.log(value)
+								return (
+									<tr style={{'display' : 'block','width' : '100%'}}>
+										{/* Color div - color name - color code */}
+										<td>
+											<div style={{'width' : '50px', 'height' : '50px', 'background' : value['color_code']}}></div>
+										</td>
+										<td>{value['color_code']}</td>
+										<td>{value['color_name']}</td>
+									</tr>
+								)
+							})}
+						</table>
+						<button id='recommend-button' onClick={this.handleGalleryOpen} className='btn btn-info' type='button'>See recommendation from database</button>
+					</div>
 
-							</div>
-							<div id='loading-screen' hidden={!this.state.display_load_screen}>
-								<img src='/loading.gif'/>
-							</div>
+					{/* Load screen */}
+					<div id='loading-screen' hidden={!this.state.display_load_screen}>
+						<img src='/loading.gif'/>
+					</div>
 				</div>
 			</div>
 		)

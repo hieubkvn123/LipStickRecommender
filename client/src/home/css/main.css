@@ -67,15 +67,20 @@
 }
 
 #loading-screen {
-	float : left;
-	width : 200px;
-	height : 200px;
+	display : block;
+	position: relative;
+	margin-left : auto;
+	margin-right : auto;
+	margin-top : auto;
+	margin-bottom : auto;
+	height : 90%;
 }
 
 #loading-screen img {
-	float : left;
-	width : 200px;
-	height : auto;
+	width : 100px;
+	margin-top : auto;
+	margin-bottom : auto;
+	margin-top : 20%;
 }
 
 #lip-color {
@@ -125,4 +130,20 @@
 .image-gallery-image {
 	width : 450px;
 	height : 450px;
+}
+
+#recommended-color-table {
+	table-layout: fixed;
+	border : none;
+}
+
+#recommended-color-table tr {
+	display : block;
+	width : 100%;
+	border-bottom : 1px solid gray;
+	margin-bottom : 5px;
+}
+#recommended-color-table td {
+	display: inline-block;
+	width : calc(100%/3);
 }

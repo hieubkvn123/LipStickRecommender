@@ -6,10 +6,19 @@ from PIL import Image
 from dl.recognition import _recognize_lip
 from utils import _detect_lip, _estimate_lip_color
 from utils import _pairwise_color_distance, _get_color_distance
+from argparse import ArgumentParser
 
 from flask import Flask
 from flask import request
 from flask_cors import CORS
+
+parser = ArgumentParser()
+parser.add_argument('--debug', required=True, type=bool, help='Weather to run server in debug mode')
+args = vars(parser.parse_args())
+
+DEBUG = False
+if(args['debug']):
+    debug = True
 
 app = Flask(__name__)
 CORS(app)
@@ -33,7 +42,14 @@ def get_best_from_colorchart(lip_color, top_pick=2):
     ### Final selection ###
     final = []
     for i in range(top_pick):
-        final.append(keys[i])
+        data_item = {}
+        data_item['color_code'] = keys[i].upper()
+        for color in color_chart:
+            if(color['hex'].upper() == data_item['color_code']):
+                data_item['color_name'] = color['name'].upper()
+
+        #final.append(keys[i])
+        final.append(data_item)
 
     return final
 
@@ -75,7 +91,7 @@ def upload():
             data = _get_color_distance('products.csv', lip_color)
             # print(json.dumps(data, sort_keys=True, indent=4)) - list of recommendations
 
-        print(get_best_from_colorchart(lip_color))
+        best_colors = get_best_from_colorchart(lip_color)
         response = {
             "lip_color" : {
                 "B" : int(lip_color[0]),
@@ -84,10 +100,16 @@ def upload():
                 'HEX' : rgb2hex(lip_color).upper()
             },
             'lip_type' : lip_type.upper(),
-            "recommendation" : data
+            "recommendation" : data,
+            "best_colors" : best_colors
         }
 
         return json.dumps(response)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    if(DEBUG):
+        print('[INFO] Running in debugging mode ... ')
+    else:
+        print('[INFO] Running in deploying mode ... ')
+
+    app.run(host='0.0.0.0', port=8080, debug=DEBUG)
