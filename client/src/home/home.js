@@ -134,7 +134,11 @@ class HomePage extends Component {
 				</div>
 
 				{/* The Gallery dialog */}
-				<Modal show={this.state.display_gallery} onHide={this.handleGalleryClose} backdrop="static" keyboard={true}>
+				<Modal show={this.state.display_gallery} 
+					onHide={this.handleGalleryClose} 
+					backdrop="static" 	
+					keyboard={true}
+					size="lg">
 			        <Modal.Header closeButton>
 			        	<Modal.Title style={{'font-weight' : 'bolder', 'text-decoration' : 'underline'}}>Brand Recommendation</Modal.Title>
 			        </Modal.Header>
@@ -148,22 +152,22 @@ class HomePage extends Component {
 			          		</Col>
 			          		<Col>
 			          			<div id='brand-info'>
-			          				<table style={{'width' : '100%'}}>
+			          				<table style={{'width' : '100%'}} id="brand-info-table">
 			          					<tr>
-			          						<th>Brand</th>
-			          						<td style={{'float' : 'right'}}>
+			          						<p><span className='header'>Brand</span></p>
+			          						<p>
 			          							{this.state.brand_info.length > 0 
-			          								? <td>{this.state.brand_info[this.state.current_brand_index].brand_name}</td> 
-			          								: <td></td>}
-			          						</td>
+			          								? <p>{this.state.brand_info[this.state.current_brand_index].brand_name}</p> 
+			          								: <p></p>}
+			          						</p>
 			          					</tr>
 			          					<tr>
-			          						<th>Product Name</th>
-			          						<td style={{'float' : 'right'}}>
+			          						<p><span className='header'>Product Name</span></p>
+			          						<p>
 			          							{this.state.brand_info.length > 0 
-			          								? <td>{this.state.brand_info[this.state.current_brand_index].product_name}</td> 
-			          								: <td></td>}
-			          						</td>
+			          								? <p>{this.state.brand_info[this.state.current_brand_index].product_name}</p> 
+			          								: <p></p>}
+			          						</p>
 			          					</tr>
 			          				</table>
 			          			</div>
