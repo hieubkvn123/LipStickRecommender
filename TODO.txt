@@ -13,5 +13,11 @@
 
  - Recognize whether the person is using matte or glossy lipstick
  - Using DeltaE - CIE94 instead of CIE76
+ - Finish the README explaining the following :
+	+ Which data source was taken
+	+ How to detect, segment the lipstick color in the lip and work out an estimated color
+	+ How to compare the similarity of two color using DeltaE-CIE76 and DeltaE-CIE94
+	+ How to differentiate between a matte and a gloss lip
+
 
 ** Project deadline : 14/01 **
