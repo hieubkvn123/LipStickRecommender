@@ -9,6 +9,8 @@ import numpy as np
 
 from imutils import face_utils
 from PIL import Image
+from skimage.color import rgb2lab
+from skimage.color import deltaE_ciede94
 
 import matplotlib
 import matplotlib.pyplot as plt
@@ -154,11 +156,19 @@ def _get_lipstick_color(path):
     
     return lip_color
 
+def _to_lab(rgb):
+    r, g, b = rgb 
+    lab = rgb2lab(np.array([r,g,b]).astype('uint8'))
+
+    return lab
+
 def _get_color_distance(data_file, color, output_file_path='data.json', top_pick=5):
     ### Compare one color with every colors ###
     data = None
-    original_color = np.array([[color]]).astype('uint8')
-    original_color = cv2.cvtColor(original_color, cv2.COLOR_BGR2LAB)
+    b, g, r = color
+    original_color = np.array([r, g, b]).astype('uint8')
+    # original_color = np.array([[color]]).astype('uint8')
+    # original_color = cv2.cvtColor(original_color, cv2.COLOR_BGR2LAB)
     if(os.path.exists(output_file_path)):
         print('[INFO] Data file exists ...')
         data = json.load(open(output_file_path, 'r'))
@@ -189,9 +199,13 @@ def _get_color_distance(data_file, color, output_file_path='data.json', top_pick
     ### Comparing the colors ###
     distance_map = {}
     for i, data_item in enumerate(data):
-        bgr_color = np.array([[[data_item['B'], data_item['G'], data_item['R']]]]).astype('uint8')
-        bgr_color = cv2.cvtColor(bgr_color, cv2.COLOR_BGR2LAB)
-        distance = np.sqrt((bgr_color - original_color) ** 2)
+        #bgr_color = np.array([[[data_item['B'], data_item['G'], data_item['R']]]]).astype('uint8')
+        #bgr_color = cv2.cvtColor(bgr_color, cv2.COLOR_BGR2LAB)
+        #distance = np.sqrt((bgr_color - original_color) ** 2)
+        color_lab = _to_lab([data_item['R'], data_item['G'], data_item['B']])
+        original_lab = _to_lab(original_color)
+        distance = deltaE_ciede94(color_lab, original_lab)
+
         distance_map[i] = distance.sum()
 
     ### Sort map by distance ###
@@ -206,10 +220,14 @@ def _get_color_distance(data_file, color, output_file_path='data.json', top_pick
     return final
 
 def _pairwise_color_distance(color1, color2):
-    color1 = cv2.cvtColor(np.array([[color1]]).astype('uint8'), cv2.COLOR_BGR2LAB)
-    color2 = cv2.cvtColor(np.array([[color2]]).astype('uint8'), cv2.COLOR_BGR2LAB)
+    #color1 = cv2.cvtColor(np.array([[color1]]).astype('uint8'), cv2.COLOR_BGR2LAB)
+    #color2 = cv2.cvtColor(np.array([[color2]]).astype('uint8'), cv2.COLOR_BGR2LAB)
+    b1, g1, r1 = color1
+    b2, g2, r2 = color2
 
-    distance = np.sqrt(((color1 - color2) ** 2).sum())
+    lab1 = _to_lab([r1, g1, b1])
+    lab2 = _to_lab([r2, g2, b2])
+    distance = deltaE_ciede94(lab1, lab2)
 
     return distance
 

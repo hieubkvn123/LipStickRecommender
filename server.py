@@ -27,14 +27,12 @@ def get_best_from_colorchart(lip_color, top_pick=2):
         distances[color['hex']] = distance 
 
     ### Sort map by distance ###
-    print(distances)
     distances = {k: v for k, v in sorted(distances.items(), key=lambda item: item[1])}
     keys = list(distances.keys())
 
     ### Final selection ###
     final = []
     for i in range(top_pick):
-        print(distances[keys[i]])
         final.append(keys[i])
 
     return final

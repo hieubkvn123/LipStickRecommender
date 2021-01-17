@@ -12,5 +12,6 @@
  - Putting things together # Working on it
 
  - Recognize whether the person is using matte or glossy lipstick
+ - Using DeltaE - CIE94 instead of CIE76
 
 ** Project deadline : 14/01 **
